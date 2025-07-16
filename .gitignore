@@ -1,0 +1,7 @@
+# created by virtualenv automatically
+/.venv
+/.idea
+/dist
+/skymanager.egg-info
+/skymanagerapi/pyproject.toml
+
