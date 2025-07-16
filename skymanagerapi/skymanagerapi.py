@@ -1,4 +1,4 @@
-import time, aiohttp, logging
+import time, aiohttp, logging, asyncio
 
 from typing import Optional, Dict, Any
 from aiohttp.client_exceptions import ClientConnectorError, ContentTypeError
@@ -6,7 +6,7 @@ from cachetools import TTLCache
 
 logger = logging.getLogger("Sky")
 
-__all__ = ("Sky", "APIError")
+__all__ = ("SkyManager", "APIError")
 
 class APIError(Exception):
     pass
